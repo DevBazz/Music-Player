@@ -22,6 +22,22 @@ const Sidebar = () => {
           </ul>
         </nav>
       </section>
+
+      <section>
+        <h2 className="mt-6 text-xl font-bold">FAVORITES</h2>
+        <ul className="mt-2 mb-[2rem]">
+        {Array(3).fill(null).map(i => (
+          <div key={i} className="flex mt-[2rem] gap-4">
+            <img src="https://images.stockcake.com/public/5/7/9/579e1c27-5860-435a-a038-4fd12e61ea46_large/neon-glowing-headphones-stockcake.jpg" 
+            alt="" className="h-16 w-16 rounded-md bg-gray-700 object-cover" />
+            <div>
+              <p className="text-whie">Random</p>
+              <p className="text-sm text-gray-400">Person</p>
+            </div>
+          </div>
+        ))}
+        </ul>
+      </section>
     </aside>
   );
 };
